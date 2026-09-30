@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Cách mạng tư sản Anh 1640–1688 · Tóm gọn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#f6efe1;--paper-2:#efe6d3;--paper-3:#e7dcc5;
+  --card:#fffdf7;
+  --ink:#231c10;--ink-2:#3d321e;--ink-soft:#5c4e33;--muted:#8a7b5c;
+  --line:rgba(35,28,16,.13);--line-2:rgba(35,28,16,.22);
+  --gold:#a67c2a;--gold-2:#c99a3b;--gold-3:#6e5218;
+  --crimson:#a83426;--crimson-2:#c45441;
+  --r:18px;--r-lg:26px;
+  --ease:cubic-bezier(.22,.8,.28,1);--ease-out:cubic-bezier(.16,.84,.26,1);
+  --shadow:0 22px 50px -30px rgba(60,45,20,.4),0 2px 6px -2px rgba(60,45,20,.08);
+  --shadow-lift:0 32px 70px -32px rgba(60,45,20,.5),0 2px 8px -2px rgba(60,45,20,.12);
+}
+html,body{height:100%;overflow:hidden;background:#0d0a05}
+#viewport{position:fixed;inset:0;overflow:hidden;background:#0d0a05}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;overflow:hidden;
+  transform-origin:center center;transform:translate(-50%,-50%) scale(var(--s,1));
+  will-change:transform;background:
+  radial-gradient(1100px 700px at 8% 4%,rgba(201,154,59,.14),transparent 60%),
+  radial-gradient(900px 600px at 92% 96%,rgba(168,52,38,.07),transparent 65%),
+  radial-gradient(1000px 500px at 50% 120%,rgba(166,124,42,.08),transparent 60%),var(--paper)}
+body{font-family:'Be Vietnam Pro',-apple-system,'Segoe UI',sans-serif;color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;cursor:default}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+img{display:block;max-width:100%}
+::selection{background:rgba(166,124,42,.3);color:#000}
+
+#app{position:absolute;inset:0;overflow:hidden}
+#grain{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .25 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply}
+#particles,#fireworks{position:absolute;inset:0;pointer-events:none}
+#particles{z-index:3;opacity:.55;mix-blend-mode:multiply}
+#fireworks{z-index:20}
+
+#slides{position:relative;width:100%;height:100%}
+.slide{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;
+  padding:38.4px;opacity:0;pointer-events:none;transform:scale(1.008);
+  transition:opacity .65s var(--ease),transform .85s var(--ease)}
+.slide.active{opacity:1;pointer-events:auto;transform:none;z-index:2}
+.slide::before{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--bg);
+  background-size:cover;background-position:center;opacity:.09;
+  filter:sepia(.45) contrast(.85) brightness(1.15);
+  mask-image:radial-gradient(circle at center,#000 25%,transparent 82%);
+  -webkit-mask-image:radial-gradient(circle at center,#000 25%,transparent 82%)}
+.slide.slide-hero::before{opacity:.2;mask-image:none;-webkit-mask-image:none;filter:sepia(.4) contrast(.9) brightness(1.05)}
+
+.wrap{position:relative;width:100%;max-width:1960px;height:100%;z-index:3;display:flex;flex-direction:column;justify-content:center}
+
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;font-weight:800;line-height:1.02;letter-spacing:-.018em;color:var(--ink)}
+h1{font-size:161.28px;line-height:.92;font-weight:900;letter-spacing:-.03em}
+h2{font-size:96px;line-height:1;font-weight:800;letter-spacing:-.024em}
+h3{font-size:42px;font-weight:700;line-height:1.16;letter-spacing:-.012em}
+h4{font-size:30px;font-weight:700;line-height:1.2}
+p{font-size:33px;line-height:1.55;color:var(--ink-2)}
+.lead{font-size:37px;line-height:1.48;color:var(--ink-2);font-weight:500}
+.small{font-size:30px;line-height:1.5;color:var(--ink-soft)}
+.gold{color:var(--gold-3);font-weight:700}
+.gold-2{color:var(--gold)}
+.crimson{color:var(--crimson);font-weight:700}
+.ink{color:var(--ink)}
+.grad-gold{background:linear-gradient(180deg,#c99a3b 0%,#8c691e 55%,#5a4310 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+.kicker{display:inline-flex;align-items:center;gap:11px;font-size:20px;font-weight:800;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--gold-3);
+  padding:12px 24px;border-radius:999px;border:2px solid rgba(166,124,42,.4);
+  background:rgba(255,253,247,.7);width:fit-content;box-shadow:0 1px 0 rgba(255,255,255,.6) inset}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(166,124,42,.7)}
+.kicker.k-crimson{color:var(--crimson);border-color:rgba(168,52,38,.42);background:rgba(255,253,247,.75)}
+.kicker.k-crimson::before{background:var(--crimson);box-shadow:0 0 10px rgba(168,52,38,.7)}
+
+.rule{height:3px;width:130px;border-radius:99px;background:linear-gradient(90deg,var(--gold),rgba(166,124,42,0));margin:22px 0}
+.rule.center{margin-left:auto;margin-right:auto;background:linear-gradient(90deg,rgba(166,124,42,0),var(--gold),rgba(166,124,42,0));width:240px}
+
+.card{position:relative;padding:36px;border-radius:var(--r-lg);border:1px solid var(--line);
+  background:var(--card);box-shadow:var(--shadow);
+  transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
+.card:hover{border-color:rgba(166,124,42,.45);transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.card.tinted{background:linear-gradient(180deg,rgba(255,253,247,.95),rgba(246,239,225,.9))}
+.card.gold-edge{border-left:5px solid var(--gold)}
+.card.red-edge{border-left:5px solid var(--crimson)}
+
+.list{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.list > div{position:relative;padding-left:34px;font-size:33px;line-height:1.5;color:var(--ink-2);font-weight:500}
+.list > div::before{content:"";position:absolute;left:2px;top:.68em;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(166,124,42,.15)}
+.list > div b{color:var(--gold-3);font-weight:800}
+.list.tight{gap:11px}
+.list.tight > div{font-size:30px;padding-left:32px}
+.list.tight > div::before{width:9px;height:9px}
+.list.dense{gap:9px}
+.list.dense > div{font-size:28px;padding-left:30px}
+.list.dense > div::before{width:8px;height:8px}
+
+.quote{position:relative;padding:24px 28px 24px 34px;border-left:5px solid var(--gold);
+  background:linear-gradient(90deg,rgba(166,124,42,.11),rgba(166,124,42,.015));
+  border-radius:0 18px 18px 0;font-size:31px;line-height:1.5;color:var(--ink-2);font-weight:500}
+.quote b{color:var(--gold-3);font-weight:800}
+.quote.crimson{border-color:var(--crimson);background:linear-gradient(90deg,rgba(168,52,38,.11),rgba(168,52,38,.015))}
+.quote.crimson b{color:var(--crimson)}
+
+.figure{position:relative;overflow:hidden;border-radius:var(--r);border:1px solid var(--line);
+  background:var(--paper-3);box-shadow:var(--shadow)}
+.figure img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.94) contrast(1.03);transition:transform 1.2s var(--ease)}
+.figure:hover img{transform:scale(1.045)}
+.figure .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;
+  background:linear-gradient(180deg,transparent,rgba(30,22,10,.92));
+  font-size:23px;line-height:1.5;color:#f6efe1}
+.figure .cap b{color:#e8cd91;font-weight:700;letter-spacing:.03em}
+.figure.portrait img{object-position:center 15%}
+.figure.fill img{position:absolute;inset:0}
+.duo{display:grid;grid-template-columns:230px 1fr;column-gap:24px;row-gap:16px;padding:26px 30px}
+.duo > .figure{align-self:stretch;min-height:0}
+.duo > .stat-row{grid-column:1/-1;margin-top:0}
+.duo .stat{padding:12px 16px}
+.duo .stat b{font-size:37px;margin-bottom:6px}
+.duo .stat span{font-size:18px}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.tag{font-size:23px;color:var(--ink-soft);font-weight:600;
+  padding:12px 24px;border-radius:999px;background:rgba(255,253,247,.8);
+  border:1px solid var(--line-2);transition:.3s var(--ease)}
+.tag:hover{border-color:var(--gold);background:rgba(166,124,42,.1);color:var(--gold-3)}
+
+.num{flex:0 0 68px;width:68px;height:68px;border-radius:18px;display:grid;place-items:center;
+  background:rgba(166,124,42,.13);border:2px solid rgba(166,124,42,.35);color:var(--gold-3);
+  font-family:'Playfair Display',serif;font-weight:800;font-size:26px}
+.num.crimson{color:var(--crimson);border-color:rgba(168,52,38,.4);background:rgba(168,52,38,.1)}
+.iconbox{display:flex;gap:22px;align-items:flex-start}
+.iconbox > div:last-child{flex:1}
+
+.stat-row{display:grid;gap:14px;margin-top:20px}
+.stat-row.c3{grid-template-columns:repeat(3,1fr)}
+.stat-row.c2{grid-template-columns:repeat(2,1fr)}
+.stat-row.c4{grid-template-columns:repeat(4,1fr)}
+.stat{padding:20px 20px 18px;border-radius:18px;background:rgba(255,253,247,.75);
+  border:1px solid var(--line);transition:.3s var(--ease)}
+.stat:hover{border-color:rgba(166,124,42,.45);background:rgba(166,124,42,.06)}
+.stat b{display:block;font-family:'Playfair Display',serif;font-size:50px;
+  font-weight:800;line-height:1;color:var(--gold-3);margin-bottom:10px;letter-spacing:-.02em}
+.stat span{display:block;font-size:22px;line-height:1.4;color:var(--muted);font-weight:500}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:46.08px;align-items:center}
+.g2-wide{grid-template-columns:1.18fr .82fr}
+.g2-narrow{grid-template-columns:.82fr 1.18fr}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:stretch}
+.section-head{margin-bottom:36px}
+.section-head .kicker{margin-bottom:16px}
+.section-head h2 + p{margin-top:14px;max-width:1200px}
+
+.hero-art{position:relative;height:760px;border-radius:28px;overflow:hidden;
+  border:1px solid rgba(166,124,42,.3);
+  box-shadow:0 40px 90px -40px rgba(60,45,20,.6),0 0 0 1px rgba(255,255,255,.5) inset}
+.hero-art img{width:100%;height:100%;object-fit:cover;filter:contrast(1.02) saturate(1) brightness(1.02)}
+.hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(30,22,10,.88))}
+.hero-art .cap{position:absolute;left:0;right:0;bottom:0;padding:28px 30px;z-index:2;
+  font-size:23px;line-height:1.5;color:#f6efe1}
+.hero-art .cap b{color:#e8cd91;font-weight:700;letter-spacing:.04em}
+.hero-art .badge{position:absolute;top:26px;left:26px;z-index:2;font-size:15px;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:#e8cd91;padding:11px 18px;border-radius:999px;
+  background:rgba(30,22,10,.72);border:1px solid rgba(201,154,59,.5);backdrop-filter:blur(10px)}
+
+.timeline{display:flex;flex-direction:column;gap:38px;margin-top:6px}
+.tl-row{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.tl-row::before{content:"";position:absolute;top:46px;left:12.5%;right:12.5%;height:3px;
+  background:linear-gradient(90deg,transparent,rgba(166,124,42,.55) 12%,rgba(166,124,42,.55) 88%,transparent)}
+.tl-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;position:relative}
+.tl-dot{position:relative;z-index:2;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(180deg,#fffdf7,#f0e6cf);border:3px solid rgba(166,124,42,.55);
+  color:var(--gold-3);font-family:'Playfair Display',serif;font-weight:800;font-size:24px;letter-spacing:.01em;
+  box-shadow:0 0 0 10px rgba(246,239,225,.95),0 0 0 11px rgba(166,124,42,.18),0 8px 18px -8px rgba(60,45,20,.35);
+  transition:.35s var(--ease)}
+.tl-item:hover .tl-dot{border-color:var(--gold);color:#4f3a0c;
+  box-shadow:0 0 0 10px rgba(246,239,225,1),0 0 0 13px rgba(166,124,42,.35),0 12px 28px -10px rgba(60,45,20,.5);
+  transform:translateY(-4px)}
+.tl-card{width:100%;padding:20px 20px 22px;border-radius:18px;background:var(--card);
+  border:1px solid var(--line);box-shadow:0 6px 14px -10px rgba(60,45,20,.3);transition:.3s var(--ease)}
+.tl-item:hover .tl-card{border-color:rgba(166,124,42,.45);transform:translateY(-2px)}
+.tl-card strong{display:block;font-family:'Playfair Display',serif;font-size:30px;color:var(--ink);margin-bottom:8px;font-weight:700;line-height:1.2}
+.tl-card span{display:block;font-size:24px;line-height:1.45;color:var(--ink-soft)}
+
+.flow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.flow .f{padding:14px 26px;border-radius:14px;background:var(--card);border:1.5px solid var(--line-2);
+  font-size:24px;color:var(--ink);font-weight:600;
+  box-shadow:0 6px 12px -8px rgba(60,45,20,.3);transition:.35s var(--ease)}
+.flow .f:hover{border-color:var(--gold);background:rgba(166,124,42,.08);color:var(--gold-3);transform:translateY(-3px)}
+.flow .a{color:var(--gold);font-size:24px;font-weight:700;opacity:.85}
+
+.thanks{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:100%}
+.thanks h1{font-size:190px;line-height:.94;font-weight:900;letter-spacing:-.035em;
+  background:linear-gradient(180deg,#c99a3b 0%,#8c691e 50%,#4f3a0c 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.thanks .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:42px;
+  color:var(--gold-3);font-weight:600;margin-top:24px}
+.badges{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:44px}
+.badge-item{padding:18px 34px;border-radius:999px;background:var(--card);border:1.5px solid var(--line-2);
+  font-size:25px;font-weight:600;color:var(--ink-2);
+  box-shadow:0 8px 16px -10px rgba(60,45,20,.35);transition:.35s var(--ease)}
+.badge-item:hover{border-color:var(--gold);background:rgba(166,124,42,.08);color:var(--gold-3);transform:translateY(-3px)}
+
+.anim{opacity:0;transform:translateY(22px)}
+.slide.active .anim{animation:rise .8s var(--ease-out) forwards}
+.a1{animation-delay:.05s}.a2{animation-delay:.14s}.a3{animation-delay:.24s}
+.a4{animation-delay:.35s}.a5{animation-delay:.47s}.a6{animation-delay:.6s}.a7{animation-delay:.74s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+.ui-counter{position:absolute;left:34px;bottom:28px;z-index:90;font-family:'Playfair Display',serif;font-size:22px;letter-spacing:.02em;color:var(--muted)}
+.ui-counter b{color:var(--gold-3);font-weight:800;font-size:30px;margin-right:4px}
+.ui-label{position:absolute;left:50%;bottom:32px;transform:translateX(-50%);z-index:90;font-size:14px;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:700;white-space:nowrap}
+.ui-nav{position:absolute;right:34px;bottom:24px;z-index:90;display:flex;gap:12px}
+.ui-btn{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+  background:rgba(255,253,247,.94);border:2px solid var(--line-2);color:var(--gold-3);
+  font-size:22px;font-weight:700;backdrop-filter:blur(10px);
+  box-shadow:0 8px 16px -8px rgba(60,45,20,.35);transition:.3s var(--ease)}
+.ui-btn:hover{border-color:var(--gold);background:#fff;color:var(--gold-3);transform:translateY(-3px);
+  box-shadow:0 12px 26px -8px rgba(60,45,20,.4)}
+.ui-progress{position:absolute;left:0;bottom:0;height:4px;width:0;z-index:100;
+  background:linear-gradient(90deg,var(--gold-3),var(--gold-2),var(--gold));
+  box-shadow:0 0 14px rgba(166,124,42,.55);transition:width .55s var(--ease)}
+.click-hint{position:absolute;left:50%;bottom:92px;transform:translateX(-50%);z-index:90;
+  font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;
+  padding:12px 24px;border-radius:999px;background:rgba(255,253,247,.94);border:1px solid var(--line-2);
+  backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .55s var(--ease);white-space:nowrap;
+  box-shadow:0 8px 20px -10px rgba(60,45,20,.3)}
+.click-hint.show{opacity:1}
+
+body.is-fs .ui-counter,body.is-fs .ui-label,body.is-fs .ui-nav,body.is-fs .ui-progress,body.is-fs .click-hint{
+  opacity:0 !important;visibility:hidden !important;pointer-events:none !important;
+  transition:opacity .3s var(--ease),visibility 0s linear .3s}
+body.is-fs #grain{opacity:.3}
+
+/* ===== NÚT ĐIỀU HƯỚNG LỚN CHO ĐIỆN THOẠI ===== */
+.mobile-nav{position:absolute;bottom:16px;left:0;right:0;z-index:120;display:none;justify-content:space-between;padding:0 16px;pointer-events:none}
+.mobile-nav .m-btn{pointer-events:auto;width:80px;height:80px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(255,253,247,.95);
+  border:2px solid rgba(166,124,42,.5);color:var(--gold-3);font-size:34px;font-weight:800;
+  box-shadow:0 10px 24px -8px rgba(60,45,20,.5);transition:.25s var(--ease);
+  -webkit-tap-highlight-color:transparent;user-select:none}
+.mobile-nav .m-btn:active{transform:scale(.92);background:rgba(166,124,42,.18)}
+.mobile-nav .m-btn:disabled{opacity:.35;transform:none}
+.mobile-nav .m-center{pointer-events:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.mobile-nav .m-center .m-count{font-family:'Playfair Display',serif;font-size:22px;color:var(--gold-3);font-weight:800}
+
+@media (max-width: 900px), (pointer: coarse) {
+  .mobile-nav{display:flex}
+  .ui-nav{display:none}
+  .ui-counter{left:20px;bottom:100px;font-size:16px}
+  .ui-counter b{font-size:22px}
+  .ui-label{display:none}
+  .click-hint{display:none}
+  .slide{padding:20px}
+}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+<div id="app">
+  <div id="grain"></div>
+  <canvas id="particles"></canvas>
+  <canvas id="fireworks"></canvas>
+
+  <div id="slides">
+
+    <!-- ===== 1. MỞ ĐẦU ===== -->
+    <section class="slide slide-hero active" data-title="Mở đầu"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/17th_century_map_of_London_(W.Hollar).jpg')">
+      <div class="wrap">
+        <div class="g2 g2-wide">
+          <div>
+            <div class="kicker anim a1">Lịch sử Cận đại · 1640 → 1688</div>
+            <h1 class="anim a2" style="margin-top:30px">Cách mạng<br><span class="grad-gold">tư sản Anh</span></h1>
+            <div class="rule anim a3"></div>
+            <p class="lead anim a4" style="max-width:900px">
+              Tóm gọn 3 mục: <b class="gold">Tiền đề</b> — <b class="gold">Mục tiêu & Lực lượng</b> — <b class="gold">Kết quả & Ý nghĩa</b>.
+              Cuộc cách mạng mở đường cho chủ nghĩa tư bản phát triển.
+            </p>
+            <div class="tag-row anim a5">
+              <span class="tag">1 · Tiền đề</span>
+              <span class="tag">2 · Mục tiêu & Lực lượng</span>
+              <span class="tag">3 · Kết quả & Ý nghĩa</span>
+            </div>
+          </div>
+          <div class="hero-art anim a4">
+            <div class="badge">Luân Đôn · Thế kỷ XVII</div>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/17th_century_map_of_London_(W.Hollar).jpg" alt="Bản đồ Luân Đôn thế kỷ XVII">
+            <div class="cap"><b>LUÂN ĐÔN — TRUNG TÂM QUYỀN LỰC</b><br>
+              Kinh đô thương mại, tài chính và chính trị; nơi hội tụ mâu thuẫn dẫn tới cách mạng.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. TIỀN ĐỀ: KINH TẾ ===== -->
+    <section class="slide" data-title="Tiền đề · Kinh tế"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/A_plan_for_extending_the_commerce_of_this_kingdom,_and_of_the_East-India-Company_Fleuron_T000245-2.png')">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker anim a1">1a · Tiền đề kinh tế</div>
+          <h2 class="anim a2" style="margin-top:18px">Sự trỗi dậy của <span class="grad-gold">kinh tế tư bản</span></h2>
+          <p class="lead anim a3">
+            Kinh tế hàng hóa phát triển mạnh nhưng bị chế độ phong kiến kìm hãm.
+          </p>
+        </div>
+        <div class="g2" style="gap:26px">
+          <div class="card anim a3 gold-edge">
+            <h3 class="gold">Phát triển</h3>
+            <div class="list tight" style="margin-top:16px">
+              <div>Sản xuất <b>len dạ</b> — ngành "quốc hồn".</div>
+              <div>Luyện kim, khai khoáng, đóng tàu phát triển.</div>
+              <div><b>Công ty Đông Ấn (1600)</b> độc quyền buôn bán phương Đông.</div>
+              <div>Nhiều công trường thủ công tư bản chủ nghĩa quy mô lớn.</div>
+            </div>
+          </div>
+          <div class="card anim a4 red-edge">
+            <h3 class="crimson">Rào cản phong kiến</h3>
+            <div class="list tight" style="margin-top:16px">
+              <div>Độc quyền thương mại do vương thất ban phát.</div>
+              <div>Thuế bất hợp lý: <b>Thuế tàu biển</b>, Tonnage & Poundage.</div>
+              <div>Phường hội phong kiến cản trở tự do sản xuất.</div>
+              <div>Chính sách độc quyền hạn chế cạnh tranh.</div>
+            </div>
+          </div>
+        </div>
+        <div class="quote anim a5" style="margin-top:24px">
+          <b>Mâu thuẫn:</b> Kinh tế tư bản phát triển nhưng bị chế độ phong kiến chuyên chế kìm hãm
+          bằng thuế khóa và độc quyền.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. TIỀN ĐỀ: CHÍNH TRỊ ===== -->
+    <section class="slide" data-title="Tiền đề · Chính trị"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/Charles_I_(1640).jpg')">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker anim a1">1b · Tiền đề chính trị</div>
+          <h2 class="anim a2" style="margin-top:18px">Xung đột <span class="grad-gold">Vua – Quốc hội</span></h2>
+          <p class="lead anim a3">
+            Mâu thuẫn giữa vương quyền chuyên chế và Nghị viện ngày càng gay gắt.
+          </p>
+        </div>
+        <div class="g3">
+          <div class="card anim a3 gold-edge">
+            <div class="iconbox" style="margin-bottom:16px">
+              <div class="num">01</div>
+              <div><h3 class="gold">Vương quyền tuyệt đối</h3></div>
+            </div>
+            <p class="small">James I và Charles I theo đuổi <b>"Quân quyền thần thụ"</b> — vua nắm quyền tối cao, không ai can thiệp.</p>
+          </div>
+          <div class="card anim a4 gold-edge">
+            <div class="iconbox" style="margin-bottom:16px">
+              <div class="num">02</div>
+              <div><h3 class="gold">Quốc hội (Nghị viện)</h3></div>
+            </div>
+            <p class="small">Đại diện Quý tộc mới và Tư sản, phản đối nhà vua tự ý đánh thuế mà không qua Nghị viện.</p>
+          </div>
+          <div class="card anim a5 red-edge">
+            <div class="iconbox" style="margin-bottom:16px">
+              <div class="num crimson">03</div>
+              <div><h3 class="crimson">Căng thẳng leo thang</h3></div>
+            </div>
+            <p class="small">Charles I cai trị <b>11 năm không triệu tập Quốc hội (1629–1640)</b>, tự đặt nhiều loại thuế vô lý.</p>
+          </div>
+        </div>
+        <div class="stat-row c3 anim a6" style="margin-top:26px">
+          <div class="stat"><b>1629</b><span>Giải tán Quốc hội</span></div>
+          <div class="stat"><b>11</b><span>Năm chuyên chế</span></div>
+          <div class="stat"><b>1640</b><span>Triệu tập Quốc hội Dài hạn</span></div>
+        </div>
+        <div class="quote crimson anim a7" style="margin-top:22px">
+          <b>Đỉnh điểm:</b> Tháng 11/1640, Charles I buộc phải triệu tập Quốc hội để xin thuế.
+          Quốc hội chớp thời cơ đòi <b>giới hạn quyền lực nhà vua</b> — cách mạng bùng nổ.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. TIỀN ĐỀ: XÃ HỘI ===== -->
+    <section class="slide" data-title="Tiền đề · Xã hội"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Sir_Thomas_More.jpg')">
+      <div class="wrap">
+        <div class="g2 g2-narrow" style="align-items:stretch">
+          <div class="figure fill portrait anim a1" style="min-height:100%">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Sir_Thomas_More.jpg" alt="Chân dung Thomas More">
+            <div class="cap"><b>THOMAS MORE (1478–1535)</b><br>
+              Tác giả <i>Utopia (Không tưởng, 1516)</i> — người đặt ra thuật ngữ "Cừu ăn thịt người".</div>
+          </div>
+          <div style="display:flex;flex-direction:column;justify-content:center">
+            <div class="kicker anim a2">1c · Tiền đề xã hội</div>
+            <h2 class="anim a3" style="margin-top:18px">Phong trào "rào đất<br><span class="grad-gold">cướp ruộng"</span></h2>
+            <p class="lead anim a4" style="margin-top:18px">
+              Nhu cầu len dạ tăng vọt khiến nuôi cừu siêu lợi nhuận. Quý tộc rào đất canh tác thành đồng cỏ
+              <b>(Phong trào rào đất)</b>, đuổi nông dân khỏi ruộng đất.
+            </p>
+            <div class="quote anim a5" style="margin-top:20px">
+              <b>"Cừu ăn thịt người"</b> — Thuật ngữ của Thomas More phản ánh biến động xã hội dữ dội:
+              cừu chiếm hết đất, hàng triệu nông dân vô gia cư.
+            </div>
+            <div class="card anim a6" style="margin-top:20px;background:rgba(166,124,42,.06);border-color:rgba(166,124,42,.28)">
+              <h3 class="gold">→ Hệ quả giai cấp</h3>
+              <p class="small" style="margin-top:8px">
+                Hình thành hai lực lượng mới: <b>Quý tộc mới</b> — kinh doanh theo lối tư bản,
+                và <b>Lao động làm thuê</b> — nông dân mất đất.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. TIỀN ĐỀ: TƯ TƯỞNG ===== -->
+    <section class="slide" data-title="Tiền đề · Tư tưởng"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/English%20Civil%20War%20parliamentary%20pamphlet,%201642.jpg')">
+      <div class="wrap">
+        <div class="g2" style="gap:30px">
+          <div class="card anim a1 gold-edge">
+            <div class="kicker">1d · Tiền đề tư tưởng</div>
+            <h2 style="margin-top:18px"><span class="grad-gold">Thanh giáo</span><br>(Thanh giáo)</h2>
+            <p class="lead" style="margin-top:16px">
+              Vũ khí tư tưởng của giai cấp tư sản và quần chúng chống triều đình phong kiến.
+            </p>
+            <div class="list" style="margin-top:18px">
+              <div><b>Thanh giáo</b> đòi "làm sạch" Giáo hội Anh giáo khỏi ảnh hưởng Công giáo phong kiến.</div>
+              <div>Đề cao lối sống <b>tiết kiệm, chăm chỉ, tích lũy vốn</b> — phù hợp đạo đức tư sản.</div>
+              <div>Trở thành ngọn cờ tập hợp tư sản, quý tộc mới và quần chúng.</div>
+              <div>Chia thành hai phái: <b>Trưởng lão</b> và <b>Độc lập</b>.</div>
+            </div>
+          </div>
+          <div class="card anim a2 red-edge">
+            <div class="kicker k-crimson">Hai phe Thanh giáo</div>
+            <h3 class="gold" style="margin-top:16px">Trưởng lão</h3>
+            <p class="small" style="margin-top:6px">Phe ôn hòa — quý tộc mới và tư sản giàu có.</p>
+            <div class="list dense" style="margin-top:8px">
+              <div>Muốn cải cách Giáo hội theo mô hình <b>Trưởng lão</b>.</div>
+              <div>Chủ trương <b>thương lượng với nhà vua</b>, không lật đổ hoàn toàn.</div>
+            </div>
+            <div style="height:1px;background:var(--line);margin:20px 0"></div>
+            <h3 class="crimson">Độc lập</h3>
+            <p class="small" style="margin-top:6px">Phe cấp tiến — tư sản vừa, tiểu tư sản và quân đội.</p>
+            <div class="list dense" style="margin-top:8px">
+              <div>Chủ trương mỗi giáo đoàn <b>tự trị độc lập</b>.</div>
+              <div>Đòi <b>tự do tín ngưỡng</b> và lật đổ triệt để chế độ quân chủ.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. MỤC TIÊU & NHIỆM VỤ ===== -->
+    <section class="slide" data-title="Mục tiêu & Nhiệm vụ"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/17th_century_map_of_London_(W.Hollar).jpg')">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <div class="kicker anim a1" style="margin:0 auto">2a · Mục tiêu & Nhiệm vụ</div>
+          <h2 class="anim a2" style="margin-top:18px">Mục tiêu của <span class="grad-gold">Cách mạng tư sản Anh</span></h2>
+          <p class="lead anim a3" style="max-width:1250px;margin:14px auto 0">
+            Ba mục tiêu cốt lõi định hình toàn bộ tiến trình cách mạng.
+          </p>
+        </div>
+        <div class="g3">
+          <div class="card anim a3 gold-edge">
+            <div class="iconbox" style="margin-bottom:22px">
+              <div class="num">01</div>
+              <div><h3 class="gold">Xóa bỏ phong kiến<br>chuyên chế</h3></div>
+            </div>
+            <p style="font-size:33px;line-height:1.55;color:var(--ink-2)">
+              Xóa bỏ quyền lực tuyệt đối của nhà vua và hệ thống phong kiến cản trở kinh tế.
+            </p>
+          </div>
+          <div class="card anim a4 gold-edge">
+            <div class="iconbox" style="margin-bottom:22px">
+              <div class="num">02</div>
+              <div><h3 class="gold">Xác lập nền<br>dân chủ tư sản</h3></div>
+            </div>
+            <p style="font-size:33px;line-height:1.55;color:var(--ink-2)">
+              Xây dựng thể chế nhà nước mới, bảo vệ quyền lợi và tự do cho giai cấp tư sản cùng quý tộc mới.
+            </p>
+          </div>
+          <div class="card anim a5 gold-edge">
+            <div class="iconbox" style="margin-bottom:22px">
+              <div class="num">03</div>
+              <div><h3 class="gold">Phát triển<br>kinh tế</h3></div>
+            </div>
+            <p style="font-size:33px;line-height:1.55;color:var(--ink-2)">
+              Tạo điều kiện thuận lợi cho công thương nghiệp và quan hệ sản xuất tư bản chủ nghĩa phát triển mạnh mẽ.
+            </p>
+          </div>
+        </div>
+        <div class="quote anim a6" style="margin-top:28px;text-align:center;border-left:none;border-top:5px solid var(--gold);border-radius:18px;background:linear-gradient(180deg,rgba(166,124,42,.11),rgba(166,124,42,.015))">
+          <b>Tổng thể:</b> Cách mạng Anh không chỉ thay ngôi đổi chủ — mà là cuộc tái cấu trúc toàn diện
+          <b>kinh tế · chính trị · xã hội</b> để mở đường cho chủ nghĩa tư bản.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. GIAI CẤP LÃNH ĐẠO & ĐỘNG LỰC ===== -->
+    <section class="slide" data-title="Giai cấp lãnh đạo & Động lực"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/English%20Civil%20War%20parliamentary%20pamphlet,%201642.jpg')">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <div class="kicker anim a1" style="margin:0 auto">2b · Giai cấp lãnh đạo & Động lực</div>
+          <h2 class="anim a2" style="margin-top:18px">Lãnh đạo & <span class="grad-gold">Động lực cách mạng</span></h2>
+          <p class="lead anim a3" style="max-width:1250px;margin:14px auto 0">
+            Liên minh <b class="gold">Tư sản — Quý tộc mới</b> lãnh đạo, <b class="crimson">quần chúng nhân dân</b> là động lực quyết định.
+          </p>
+        </div>
+        <div class="g2" style="gap:24px">
+          <div class="card anim a3 gold-edge">
+            <div class="iconbox" style="margin-bottom:22px">
+              <div class="num">01</div>
+              <div>
+                <h3 class="gold">Giai cấp lãnh đạo</h3>
+                <p class="small" style="margin-top:8px">Tư sản & Quý tộc mới</p>
+              </div>
+            </div>
+            <div class="list tight">
+              <div><b>Tư sản:</b> chủ doanh nghiệp, thương gia, chủ ngân hàng — nắm Công ty Đông Ấn, mâu thuẫn với chế độ chuyên chế.</div>
+              <div><b>Quý tộc mới:</b> sở hữu ruộng đất nhưng kinh doanh theo hướng tư bản (nông trại, chăn nuôi cừu, buôn len dạ).</div>
+              <div>Liên minh này <b>khởi xướng, tổ chức và định hướng</b> đấu tranh — nhưng mang tính <b>bảo thủ, không triệt để</b>.</div>
+            </div>
+            <div class="stat-row c2" style="margin-top:20px">
+              <div class="stat"><b>Tư sản</b><span>Vốn · thương mại · ngân hàng</span></div>
+              <div class="stat"><b>Quý tộc mới</b><span>Ruộng đất · nông trại tư bản</span></div>
+            </div>
+          </div>
+          <div class="card anim a4 red-edge">
+            <div class="iconbox" style="margin-bottom:22px">
+              <div class="num crimson">02</div>
+              <div>
+                <h3 class="crimson">Động lực cách mạng</h3>
+                <p class="small" style="margin-top:8px">Quần chúng nhân dân</p>
+              </div>
+            </div>
+            <div class="list tight">
+              <div><b>Nông dân:</b> mất đất, bị áp bức — lực lượng đông đảo nhất.</div>
+              <div><b>Thợ thủ công:</b> thành thị, phường hội bị phá vỡ.</div>
+              <div><b>Bình dân đô thị:</b> lao động nghèo, tham gia trực tiếp vào nội chiến.</div>
+              <div>Là <b>lực lượng chủ chốt</b> tạo sức mạnh vật chất lật đổ chế độ phong kiến.</div>
+            </div>
+            <div class="stat-row c3" style="margin-top:20px">
+              <div class="stat"><b>Nông dân</b><span>Mất đất · bị áp bức</span></div>
+              <div class="stat"><b>Thợ thủ công</b><span>Thành thị · phường hội</span></div>
+              <div class="stat"><b>Bình dân</b><span>Lao động nghèo đô thị</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="quote crimson anim a6" style="margin-top:24px">
+          <b>Kết luận:</b> Nếu không có sự tham gia đông đảo của quần chúng nhân dân,
+          cách mạng không thể giành thắng lợi trước đội quân Bảo hoàng hùng mạnh.
+          <b>Sức mạnh cách mạng = Lãnh đạo tư sản × Động lực quần chúng.</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. DIỄN BIẾN NỘI CHIẾN ===== -->
+    <section class="slide" data-title="Diễn biến nội chiến"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/English%20Civil%20War%20parliamentary%20pamphlet,%201642.jpg')">
+      <div class="wrap">
+        <div class="g2 g2-narrow" style="align-items:center">
+          <div>
+            <div class="kicker anim a1">3a · Diễn biến cuộc chiến</div>
+            <h2 class="anim a2" style="margin-top:20px">Nội chiến<br><span class="grad-gold">(1642 – 1648)</span></h2>
+            <p class="lead anim a3" style="margin-top:18px">
+              Tháng 8/1642, Charles I tuyên chiến với Quốc hội. Nước Anh chia thành hai phe rõ rệt,
+              mở đầu cuộc nội chiến đẫm máu kéo dài 6 năm.
+            </p>
+            <div class="list anim a4" style="margin-top:20px">
+              <div><b class="crimson">Phe Bảo hoàng</b> — Quý tộc phong kiến, Giáo hội Anh giáo và các thế lực ủng hộ nhà vua.</div>
+              <div><b class="gold">Phe Quốc hội</b> — Tư sản, Quý tộc mới, Thanh giáo, nông dân và thợ thủ công thành thị.</div>
+            </div>
+            <div class="tag-row anim a5">
+              <span class="tag">6 năm giao tranh</span>
+              <span class="tag">Toàn lãnh thổ Anh</span>
+              <span class="tag">Kết thúc: 1648</span>
+            </div>
+          </div>
+          <div class="card anim a3">
+            <h3 class="gold">Tương quan lực lượng</h3>
+            <p class="small" style="margin-top:14px">
+              Ban đầu, quân đội Nhà vua chiếm ưu thế nhờ lực lượng kỵ binh chuyên nghiệp và sự ủng hộ
+              của tầng lớp quý tộc. Tuy nhiên, sự xuất hiện của <b>Oliver Cromwell</b> và
+              <b>Quân đội Kiểu mới</b> đã làm thay đổi hoàn toàn cục diện.
+            </p>
+            <div class="stat-row c2" style="margin-top:18px">
+              <div class="stat"><b class="crimson" style="font-size:27px">Bảo hoàng</b><span>Vua · Quý tộc · Anh giáo</span></div>
+              <div class="stat"><b class="gold" style="font-size:27px">Quốc hội</b><span>Tư sản · Thanh giáo · Dân chúng</span></div>
+            </div>
+            <div class="g2" style="gap:14px;margin-top:20px">
+              <div class="figure fill portrait" style="aspect-ratio:3/4">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Charles_I_(1640).jpg" alt="Charles I">
+                <div class="cap">Vua Charles I — Phe Bảo hoàng</div>
+              </div>
+              <div class="figure fill portrait" style="aspect-ratio:3/4">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Oliver_Cromwell_Wellcome_M0011860.jpg" alt="Oliver Cromwell">
+                <div class="cap">Oliver Cromwell — Phe Quốc hội</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. TRẬN NASEBY ===== -->
+    <section class="slide" data-title="Trận Naseby 1645"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Naseby.jpg')">
+      <div class="wrap">
+        <div class="g2" style="align-items:center">
+          <div class="card anim a1">
+            <div class="kicker">3b · Bước ngoặt quân sự</div>
+            <h2 style="margin-top:18px">Quân đội Kiểu mới &<br><span class="grad-gold">trận Naseby (1645)</span></h2>
+            <p class="lead" style="margin-top:18px">
+              Cromwell xây dựng <b>Quân đội Kiểu mới</b> với kỷ luật nghiêm minh,
+              tinh thần Thanh giáo cao và cất nhắc sĩ quan dựa trên <b>năng lực chiến đấu</b> thay vì nguồn gốc quý tộc.
+            </p>
+            <div class="quote" style="margin-top:20px">
+              <b>Trận Naseby (14/6/1645):</b> Quân đội Kiểu mới đập tan quân chủ lực của nhà vua,
+              bắt sống Charles I cùng toàn bộ kho tàng và tài liệu mật — quyết định thắng lợi của phe Quốc hội.
+            </div>
+            <div class="stat-row c3" style="margin-top:18px">
+              <div class="stat"><b>1645</b><span>Năm diễn ra trận quyết định</span></div>
+              <div class="stat"><b>14/6</b><span>Ngày trận Naseby</span></div>
+              <div class="stat"><b>1648</b><span>Nội chiến kết thúc</span></div>
+            </div>
+          </div>
+          <div class="figure fill anim a2" style="min-height:720px">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Naseby.jpg" alt="Trận Naseby 1645">
+            <div class="cap"><b>TRẬN NASEBY (1645)</b><br>
+              Trận đánh lịch sử quét sạch quân đội Bảo hoàng, đặt dấu chấm hết cho tham vọng chuyên chế của Charles I.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. XỬ TỬ VUA CHARLES I ===== -->
+    <section class="slide" data-title="Xử tử Vua Charles I"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/The_Execution_of_Charles_I.jpg')">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <div class="kicker k-crimson anim a1" style="margin:0 auto">3c · Sự kiện chấn động</div>
+          <h2 class="anim a2" style="margin-top:20px">
+            30/01/1649 — Xử tử Vua Charles I<br><span class="crimson">Thành lập chế độ Cộng hòa</span>
+          </h2>
+          <p class="lead anim a3" style="max-width:1300px;margin:16px auto 0">
+            Vua Charles I bị xét xử và trảm quyết vì tội phản quốc. Chế độ quân chủ và Thượng viện bị xóa bỏ.
+            Nước Anh chính thức trở thành <b class="gold">Nền Cộng hòa (Thịnh vượng chung Anh)</b>.
+          </p>
+        </div>
+        <div class="g2" style="margin-top:10px;align-items:stretch">
+          <div class="figure fill anim a4" style="min-height:420px">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trial_of_King_Charles_1st_in_Westminster_hall_1649_LCCN2003677954.jpg" alt="Xét xử Charles I">
+            <div class="cap">Phiên tòa xét xử Vua Charles I tại Westminster Hall (1/1649)</div>
+          </div>
+          <div class="card anim a5 gold-edge" style="display:flex;flex-direction:column;justify-content:center">
+            <h3 class="gold">Ý nghĩa giai đoạn Cộng hòa</h3>
+            <div class="list" style="margin-top:18px">
+              <div>Đỉnh cao phát triển của Cách mạng tư sản Anh.</div>
+              <div>Đánh dấu thất bại hoàn toàn của chế độ phong kiến chuyên chế.</div>
+              <div>Quyền lực tập trung vào Quốc hội Rump và Quân đội.</div>
+              <div>Mở ra mô hình nhà nước Cộng hòa đầu tiên ở châu Âu cận đại.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 11. KẾT QUẢ ===== -->
+    <section class="slide" data-title="Kết quả"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/The_Execution_of_Charles_I.jpg')">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <div class="kicker k-crimson anim a1" style="margin:0 auto">4 · Kết quả & Ý nghĩa</div>
+          <h2 class="anim a2" style="margin-top:18px">Kết quả <span class="grad-gold">Cách mạng tư sản Anh</span></h2>
+          <p class="lead anim a3" style="max-width:1300px;margin:16px auto 0">
+            Từ chuyên chế → Nội chiến → Cộng hòa → Bảo hộ công → Phục hồi → <b class="gold">Quân chủ Lập hiến</b>.
+          </p>
+        </div>
+        <div class="g2" style="gap:24px;align-items:stretch">
+          <div class="card anim a4 gold-edge">
+            <h3 class="gold">Kết quả chính trị</h3>
+            <div class="list" style="margin-top:16px">
+              <div>Lật đổ chế độ phong kiến chuyên chế, xử tử Vua Charles I (1649).</div>
+              <div>Thành lập nền Cộng hòa (Thịnh vượng chung Anh).</div>
+              <div>Trải qua Bảo hộ công (1653–1658) và Phục hồi quân chủ (1660).</div>
+              <div><b class="gold">Cách mạng Vinh quang (1688)</b> — lật đổ James II không đổ máu.</div>
+              <div><b>Dự luật Quyền lợi (1689)</b> — xác lập Quân chủ Lập hiến.</div>
+            </div>
+          </div>
+          <div class="card anim a5 red-edge">
+            <h3 class="crimson">Kết quả kinh tế – xã hội</h3>
+            <div class="list" style="margin-top:16px">
+              <div>Chủ nghĩa tư bản được giải phóng, phát triển mạnh mẽ.</div>
+              <div>Tầng lớp tư sản và quý tộc mới nắm quyền lực thực tế.</div>
+              <div>Nông dân vẫn không có đất — mâu thuẫn giai cấp chưa được giải quyết triệt để.</div>
+              <div>Hình thành hệ thống chính đảng Whigs & Tories.</div>
+            </div>
+          </div>
+        </div>
+        <div class="flow anim a6" style="margin-top:26px">
+          <span class="f">Chuyên chế</span><span class="a">→</span>
+          <span class="f">Nội chiến</span><span class="a">→</span>
+          <span class="f">Cộng hòa</span><span class="a">→</span>
+          <span class="f">Bảo hộ công</span><span class="a">→</span>
+          <span class="f">Phục hồi</span><span class="a">→</span>
+          <span class="f">Quân chủ Lập hiến</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 12. Ý NGHĨA ===== -->
+    <section class="slide" data-title="Ý nghĩa"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/English_Bill_of_Rights_of_1689.jpg')">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <div class="kicker anim a1" style="margin:0 auto">4 · Ý nghĩa lịch sử</div>
+          <h2 class="anim a2" style="margin-top:18px">Ý nghĩa của <span class="grad-gold">Cách mạng tư sản Anh</span></h2>
+        </div>
+        <div class="g2" style="align-items:stretch">
+          <div class="card anim a4 gold-edge">
+            <h3 class="gold">Đối với nước Anh</h3>
+            <div class="list" style="margin-top:18px">
+              <div>Lật đổ chế độ phong kiến chuyên chế triệt để.</div>
+              <div>Mở đường cho Chủ nghĩa tư bản và Cách mạng Công nghiệp thế kỷ XVIII.</div>
+              <div>Xác lập thể chế Quân chủ Lập hiến ổn định lâu dài.</div>
+              <div>Tạo tiền đề cho nước Anh trở thành đế quốc thương mại hàng đầu thế giới.</div>
+            </div>
+          </div>
+          <div class="card anim a5 gold-edge">
+            <h3 class="gold">Đối với thế giới</h3>
+            <div class="list" style="margin-top:18px">
+              <div>Mở ra thời kỳ Lịch sử Cận đại của nhân loại.</div>
+              <div>Đặt móng cho lý luận và thực tiễn chính trị hiện đại (phân chia quyền lực, nghị viện).</div>
+              <div>Cung cấp mô hình cho các cuộc cách mạng tư sản sau này (Mỹ, Pháp).</div>
+              <div>Khẳng định vai trò của giai cấp tư sản trong tiến trình lịch sử.</div>
+            </div>
+          </div>
+        </div>
+        <div class="quote anim a6" style="margin-top:24px">
+          <b>Đặc điểm:</b> Cách mạng Anh <b>không triệt để</b> — vẫn giữ ngôi vua và đặc quyền quý tộc,
+          nhưng <b>ổn định và bền vững</b>: mô hình Quân chủ Lập hiến Anh vẫn tồn tại đến ngày nay.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 13. CẢM ƠN ===== -->
+    <section class="slide slide-thanks" data-title="Cảm ơn"
+      style="--bg:url('https://commons.wikimedia.org/wiki/Special:FilePath/17th_century_map_of_London_(W.Hollar).jpg')">
+      <div class="wrap thanks">
+        <div class="kicker anim a1">Xin chân thành cảm ơn</div>
+        <h1 class="anim a2" style="margin-top:30px">Cảm ơn thầy cô<br>& các bạn!</h1>
+        <p class="sub anim a3">Đã theo dõi bài thuyết trình</p>
+        <div class="rule center anim a4"></div>
+        <div class="badges anim a5">
+          <div class="badge-item">❓ Hỏi & Đáp · Thảo luận</div>
+          <div class="badge-item">💬 Ý kiến đóng góp</div>
+          <div class="badge-item">⭐ Lịch sử Cận đại</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="ui-counter" id="counter"><b>01</b>/ 13</div>
+  <div class="ui-label" id="label">Mở đầu</div>
+  <div class="ui-nav">
+    <button class="ui-btn" id="prev" title="Trang trước">←</button>
+    <button class="ui-btn" id="next" title="Trang sau">→</button>
+    <button class="ui-btn" id="fs-btn" title="Toàn màn hình (F)">⛶</button>
+  </div>
+  <div class="ui-progress" id="progress"></div>
+  <div class="click-hint" id="clickHint">Click trái: lùi · Click phải: tiến · F: toàn màn hình</div>
+
+  <!-- ===== NÚT ĐIỀU HƯỚNG LỚN CHO ĐIỆN THOẠI ===== -->
+  <div class="mobile-nav">
+    <button class="m-btn" id="m-prev" aria-label="Trang trước">◀</button>
+    <div class="m-center">
+      <span class="m-count" id="m-count">01 / 13</span>
+      <span id="m-label">Mở đầu</span>
+    </div>
+    <button class="m-btn" id="m-next" aria-label="Trang sau">▶</button>
+  </div>
+
+</div>
+</div></div>
+
+<script>
+const DW = 1920, DH = 1080;
+const stageEl = document.getElementById('stage');
+let SCALE = 1;
+function fitStage(){
+  const vw = document.documentElement.clientWidth || innerWidth;
+  const vh = document.documentElement.clientHeight || innerHeight;
+  SCALE = Math.min(vw / DW, vh / DH);
+  stageEl.style.setProperty('--s', SCALE);
+  if(typeof resizeParticles === 'function'){ resizeParticles(); resizeFW(); }
+}
+addEventListener('resize', fitStage);
+document.addEventListener('fullscreenchange', () => setTimeout(fitStage, 60));
+
+const slides = [...document.querySelectorAll('.slide')];
+
+function fitContent(){
+  slides.forEach(sl => {
+    const w = sl.querySelector('.wrap'); if(!w) return;
+    w.style.transform = ''; w.style.width = '';
+    const avail = w.clientHeight;
+    let k = 1;
+    if(w.scrollHeight > avail + 1){
+      w.style.transformOrigin = 'center center';
+      for(let i = 0; i < 8; i++){
+        const need = w.scrollHeight;
+        const kn = Math.max(.6, Math.min(1, avail / need * .995));
+        if(Math.abs(kn - k) < .002 && i > 0) break;
+        k = kn;
+        w.style.width = (100 / k) + '%';
+      }
+      w.style.transform = 'scale(' + k + ')';
+    }
+  });
+}
+addEventListener('load', fitContent);
+if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitContent);
+
+let current = 0, locked = false;
+const counter  = document.getElementById('counter');
+const label    = document.getElementById('label');
+const progress = document.getElementById('progress');
+const mCount   = document.getElementById('m-count');
+const mLabel   = document.getElementById('m-label');
+
+function updateUI(){
+  const num = String(current+1).padStart(2,'0');
+  const total = String(slides.length).padStart(2,'0');
+  counter.innerHTML = '<b>' + num + '</b>/ ' + total;
+  label.textContent = slides[current].dataset.title || '';
+  mCount.textContent = num + ' / ' + total;
+  mLabel.textContent = slides[current].dataset.title || '';
+  progress.style.width = ((current+1) / slides.length * 100) + '%';
+}
+function resetAnimations(slide){
+  slide.querySelectorAll('.anim').forEach(el => {
+    el.style.animation = 'none'; void el.offsetWidth; el.style.animation = '';
+  });
+}
+function goTo(n){
+  if(locked || n < 0 || n >= slides.length || n === current) return;
+  locked = true;
+  const prev = slides[current], target = slides[n];
+  prev.classList.remove('active');
+  resetAnimations(target);
+  target.classList.add('active');
+  current = n; updateUI();
+  setTimeout(() => {
+    locked = false;
+    if(current === slides.length - 1) explodeFireworks();
+    else burstSparkle();
+  }, 700);
+}
+document.getElementById('next').onclick = () => goTo(current + 1);
+document.getElementById('prev').onclick = () => goTo(current - 1);
+document.getElementById('m-next').onclick = () => goTo(current + 1);
+document.getElementById('m-prev').onclick = () => goTo(current - 1);
+
+const fsBtn = document.getElementById('fs-btn');
+fsBtn.onclick = () => {
+  if(!document.fullscreenElement){
+    document.documentElement.requestFullscreen().catch(err => alert('Không thể bật toàn màn hình: ' + err.message));
+  } else { document.exitFullscreen(); }
+};
+document.addEventListener('keydown', e => {
+  if(['ArrowRight',' ','PageDown'].includes(e.key)){ e.preventDefault(); goTo(current + 1); }
+  else if(['ArrowLeft','PageUp'].includes(e.key)){ e.preventDefault(); goTo(current - 1); }
+  else if(e.key === 'Home'){ e.preventDefault(); if(current) goTo(0); }
+  else if(e.key === 'End'){ e.preventDefault(); if(current < slides.length - 1) goTo(slides.length - 1); }
+  else if(e.key.toLowerCase() === 'f'){ fsBtn.click(); }
+});
+document.addEventListener('contextmenu', e => {
+  e.preventDefault();
+  if(e.target.closest('.ui-btn') || e.target.closest('.m-btn')) return;
+  goTo(current + 1);
+});
+document.addEventListener('click', e => {
+  if(e.target.closest('.ui-btn') || e.target.closest('.m-btn') || e.target.closest('.mobile-nav')) return;
+  goTo(current - 1);
+});
+document.addEventListener('fullscreenchange', () => {
+  const fs = !!document.fullscreenElement;
+  document.body.classList.toggle('is-fs', fs);
+  fsBtn.textContent = fs ? '⤢' : '⛶';
+});
+const hint = document.getElementById('clickHint');
+setTimeout(() => hint.classList.add('show'), 900);
+setTimeout(() => hint.classList.remove('show'), 6500);
+updateUI();
+
+const pc = document.getElementById('particles'), pctx = pc.getContext('2d');
+let pts = [];
+const dustColors = [[166,124,42],[140,105,30],[80,60,20]];
+function resizeParticles(){
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  const k = dpr * SCALE;
+  pc.width = DW * k; pc.height = DH * k;
+  pc.style.width = DW + 'px'; pc.style.height = DH + 'px';
+  pctx.setTransform(k, 0, 0, k, 0, 0);
+  const count = Math.min(80, Math.round(DW / 20));
+  pts = Array.from({length: count}, () => ({
+    x: Math.random() * DW, y: Math.random() * DH,
+    r: .6 + Math.random() * 2.2, vx: -.08 + Math.random() * .16, vy: -.08 + Math.random() * .16,
+    a: .12 + Math.random() * .32, tw: Math.random() * Math.PI * 2, ts: .008 + Math.random() * .016,
+    c: dustColors[Math.floor(Math.random() * dustColors.length)]
+  }));
+}
+function drawParticles(){
+  pctx.clearRect(0, 0, DW, DH);
+  for(const p of pts){
+    p.x += p.vx; p.y += p.vy; p.tw += p.ts;
+    if(p.y > DH) p.y = 0; if(p.y < 0) p.y = DH;
+    if(p.x > DW) p.x = 0; if(p.x < 0) p.x = DW;
+    const alpha = p.a * (.55 + .45 * Math.sin(p.tw));
+    pctx.beginPath();
+    pctx.fillStyle = `rgba(${p.c[0]},${p.c[1]},${p.c[2]},${alpha})`;
+    pctx.shadowColor = `rgba(${p.c[0]},${p.c[1]},${p.c[2]},${alpha * .8})`;
+    pctx.shadowBlur = p.r * 3;
+    pctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); pctx.fill();
+  }
+  pctx.shadowBlur = 0;
+  requestAnimationFrame(drawParticles);
+}
+resizeParticles(); drawParticles();
+
+const fwc = document.getElementById('fireworks'), fwctx = fwc.getContext('2d');
+let fireworks = [];
+function resizeFW(){
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  const k = dpr * SCALE;
+  fwc.width = DW * k; fwc.height = DH * k;
+  fwc.style.width = DW + 'px'; fwc.style.height = DH + 'px';
+  fwctx.setTransform(k, 0, 0, k, 0, 0);
+}
+resizeFW(); fitStage();
+function burstSparkle(){
+  const cx = DW / 2, cy = DH / 2;
+  const colors = ['#c99a3b','#a67c2a','#e8cd91','#a83426'];
+  for(let i = 0; i < 18; i++){
+    const angle = Math.random() * Math.PI * 2;
+    const speed = .8 + Math.random() * 3, dist = 140 + Math.random() * 260;
+    fireworks.push({
+      x: cx + Math.cos(angle) * dist * .3, y: cy + Math.sin(angle) * dist * .18,
+      vx: Math.cos(angle) * speed * .4, vy: Math.sin(angle) * speed * .4 - .5,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      alpha: .85, decay: .022 + Math.random() * .02, size: 1 + Math.random() * 1.8
+    });
+  }
+}
+function explodeFireworks(){
+  const colors = ['#c99a3b','#a67c2a','#e8cd91','#a83426','#7a5a1c'];
+  for(let b = 0; b < 4; b++){
+    setTimeout(() => {
+      const cx = DW * (0.2 + Math.random() * 0.6);
+      const cy = DH * (0.2 + Math.random() * 0.5);
+      for(let i = 0; i < 55; i++){
+        const angle = Math.random() * Math.PI * 2, speed = 1.6 + Math.random() * 6;
+        fireworks.push({
+          x: cx, y: cy, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          alpha: 1, decay: 0.014 + Math.random() * 0.014, size: 1.6 + Math.random() * 2.4
+        });
+      }
+    }, b * 280);
+  }
+}
+function updateFireworks(){
+  fwctx.clearRect(0, 0, DW, DH);
+  for(let i = fireworks.length - 1; i >= 0; i--){
+    const f = fireworks[i];
+    f.x += f.vx; f.y += f.vy; f.vy += 0.05; f.alpha -= f.decay;
+    if(f.alpha <= 0) fireworks.splice(i, 1);
+    else {
+      fwctx.globalAlpha = f.alpha; fwctx.fillStyle = f.color;
+      fwctx.shadowColor = f.color; fwctx.shadowBlur = 8;
+      fwctx.beginPath(); fwctx.arc(f.x, f.y, f.size, 0, Math.PI * 2); fwctx.fill();
+    }
+  }
+  fwctx.globalAlpha = 1; fwctx.shadowBlur = 0;
+  requestAnimationFrame(updateFireworks);
+}
+updateFireworks();
+</script>
+</body>
+</html>
